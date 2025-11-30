@@ -1,0 +1,103 @@
+/* --- Корневая область игры --- */
+.game-root {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+}
+
+/* --- Боковые колонки: адаптивная ширина, НО не перекрывают центр --- */
+.left-col,
+.right-col {
+  position: absolute;
+  top: 60px;
+  bottom: 85px;
+
+  width: calc(50% - 120px);   /* ← теперь всегда остаётся место в центре */
+  max-width: 300px;           /* максимум */
+  min-width: 140px;           /* минимум на телефоне */
+
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.left-col { left: 5px; }
+.right-col { right: 5px; }
+
+/* --- Нижние панели также не лезут в центр --- */
+.bottom-right,
+.bottom-left-bar {
+  position: absolute;
+  bottom: 10px;
+
+  width: calc(50% - 120px);
+  max-width: 300px;
+  min-width: 140px;
+}
+
+.bottom-left-bar { left: 5px; }
+.bottom-right { right: 5px; }
+
+/* --- Блоки --- */
+.box {
+  background: rgba(0,0,0,0.28);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  padding: 6px !important;
+  margin: 0;
+  min-height: unset !important;
+}
+
+/* --- Уменьшенные заголовки --- */
+.box Title,
+.box Caption,
+.box .vkuiTitle,
+.box .vkuiCaption {
+  font-size: 12px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* --- Компактные кнопки --- */
+.vkuiButton {
+  font-size: 12px !important;
+  height: 28px !important;
+  padding: 0 8px !important;
+  min-height: 28px !important;
+}
+
+/* --- Внутренние скролл-зоны --- */
+.dialog-box,
+.ingredient-list,
+.dispenser-container,
+.order-panel {
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* --- Минимизация пустот --- */
+.box > * {
+  margin: 3px 0 !important;
+}
+
+.ingredient-item,
+.dispenser-row,
+.person-box,
+.order-box {
+  padding: 3px 6px !important;
+  margin: 3px 0 !important;
+  border-radius: 6px !important;
+}
+
+/* --- Центр не перекрывается --- */
+.center-area {
+  pointer-events: none;
+}
+.dialog-box {
+  margin-top: 150px !important;   /* опусти на нужную величину */
+}
+

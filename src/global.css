@@ -1,0 +1,29 @@
+/* Убирает фон всех групп */
+.vkuiGroup__inner,
+.vkuiGroup,
+.vkuiGroup__header {
+  background: rgba(0, 0, 0, 0.25) !important; /* полупрозрачный */
+  backdrop-filter: blur(4px); /* можно убрать если не нужен эффект стекла */
+}
+
+/* Прозрачные панели */
+.vkuiPanel {
+  background: transparent !important;
+}
+
+/* Прозрачный SplitCol */
+.app-stage {
+  background: transparent !important;
+}
+
+/* Прозрачные модалки */
+.vkuiModalPage__in,
+.vkuiModalPage {
+  background: rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(4px);
+}
+
+/* Прозрачные Div */
+.vkuiDiv {
+  background: transparent !important;
+}
