@@ -9,6 +9,7 @@
 /* Прозрачные панели */
 .vkuiPanel {
   background: transparent !important;
+  color: var(--vkui--color_text_primary);
 }
 
 /* Прозрачный SplitCol */
@@ -17,13 +18,22 @@
 }
 
 /* Прозрачные модалки */
+.vkuiModalPage,
 .vkuiModalPage__in,
-.vkuiModalPage {
-  background: rgba(0, 0, 0, 0.25) !important;
-  backdrop-filter: blur(4px);
+.vkuiModalCard {
+  background: rgba(0, 0, 0, 0.35) !important;
+  backdrop-filter: blur(6px);
+  color: var(--vkui--color_text_primary);
 }
 
 /* Прозрачные Div */
 .vkuiDiv {
   background: transparent !important;
 }
+
+/* Гарантия светлого текста во всём приложении */
+#root,
+#root * {
+  color: var(--vkui--color_text_primary);
+}
+

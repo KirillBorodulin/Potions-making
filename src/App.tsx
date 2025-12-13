@@ -85,6 +85,7 @@ export const App = () => {
     <SplitLayout popout={popout} modal={modal}>
       <Background />
       <SplitCol className="app-stage" style={{ position: 'relative', zIndex: 1 }}>
+
         <View activePanel={activePanel}>
           <Game
             id="game"

@@ -1,0 +1,28 @@
+/* src/styles/theme.css */
+
+/* Применяется И для light, И для dark */
+.vkui--light,
+.vkui--dark {
+  /* Основной текст */
+  --vkui--color_text_primary: #ffffff;
+  --vkui--color_text_secondary: #ffffff;
+  --vkui--color_text_tertiary: #dddddd;
+  --vkui--color_text_subhead: #ffffff;
+
+  /* Заголовки */
+  --vkui--color_text_headline: #ffffff;
+  --vkui--color_text_title: #ffffff;
+
+  /* Подписи / Caption */
+  --vkui--color_text_caption: #ffffff;
+
+  /* Счётчики, мелкий текст */
+  --vkui--color_text_counter: #ffffff;
+
+  /* Иконки */
+  --vkui--color_icon_primary: #ffffff;
+  --vkui--color_icon_secondary: #ffffff;
+
+  /* Разделители (чтобы не были чёрными) */
+  --vkui--color_separator_primary: rgba(255, 255, 255, 0.2);
+}

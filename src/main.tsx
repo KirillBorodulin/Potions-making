@@ -2,7 +2,6 @@ import { createRoot } from 'react-dom/client'
 
 import vkBridge from '@vkontakte/vk-bridge';
 import { AppConfig } from './AppConfig';
-import './styles/orientation.css';
 import './components/Background.css';
 import './global.css';
 
