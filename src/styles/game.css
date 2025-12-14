@@ -100,4 +100,33 @@
 .dialog-box {
   margin-top: 150px !important;   /* опусти на нужную величину */
 }
+/* Кнопка "Подать" — главный алхимический экшен */
+.btn-serve {
+  background: linear-gradient(135deg, #5a5a5a, #5a5a5a) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  box-shadow: 0 0 8px #5a5a5a;
+}
+
+/* hover */
+.btn-serve:hover {
+  background: linear-gradient(135deg, #5a5a5a, #5a5a5a) !important;
+}
+
+/* active */
+.btn-serve:active {
+  background: linear-gradient(135deg, #5a5a5a, #5a5a5a) !important;
+  box-shadow: 0 0 4px #5a5a5a inset;
+}
+/* Кнопка "+" — чёрный цвет */
+.btn-plus {
+  color: #000000 !important;
+}
+
+/* если фон светлый — можно чуть усилить */
+.btn-plus:hover {
+  color: #000000 !important;
+}
+
+
 

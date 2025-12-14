@@ -41,12 +41,6 @@ export const RECIPES: Recipe[] = [
     price: 25,
     ingredients: ['fairy_dust', 'ice_crystal', 'blue_berries', 'troll_tooth'],
   },
-  {
-    id: 'jam',
-    name: 'Пива',
-    price: 8,
-    ingredients: ['blue_berries', 'blue_berries','blue_berries'],
-  },
 ];
 
 // Быстрые мапы

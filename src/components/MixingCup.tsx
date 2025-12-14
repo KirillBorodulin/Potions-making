@@ -27,7 +27,7 @@ export const MixingCup: FC<MixingCupProps> = ({ cup, onMix, onServe, onClear }) 
       </div>
       <div style={{ display: 'flex', gap: 8, paddingTop: 12 }}>
         <Button size="m" mode="secondary" onClick={onMix}>Смешать</Button>
-        <Button size="m" mode="primary" onClick={onServe}>Подать</Button>
+        <Button size="m" mode="primary" className="btn-serve" onClick={onServe}>Подать</Button>
         <Button size="m" mode="outline" onClick={onClear}>Выкинуть</Button>
       </div>
     </Div>

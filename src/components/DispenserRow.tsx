@@ -14,7 +14,7 @@ export const DispenserRow: FC<DispenserRowProps> = ({ onDispense }) => {
         {INGREDIENTS.map((ing: typeof INGREDIENTS[number]) => (
           <div key={ing.id} className="box center pad8" style={{ flexDirection: 'column', gap: 8 }}>
             <Caption>{ing.title}</Caption>
-            <Button size="m" onClick={() => onDispense(ing.id as IngredientId)}>+</Button>
+            <Button size="m" className="btn-plus" onClick={() => onDispense(ing.id as IngredientId)}>+</Button>
           </div>
         ))}
       </div>
